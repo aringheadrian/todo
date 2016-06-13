@@ -19,7 +19,7 @@ body .container {
   width: 100%;
   padding: 0 15px;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
