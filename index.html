@@ -14,12 +14,12 @@
 		<div class="container" ng-app="angularTodo">
 		  <h1>19 planuri pentru anul 2016</h1>
 		  <div class="todo-list" ng-controller="angularTodoC">
-		    <div class="todo-list__head">
+		    <!-- <div class="todo-list__head">
 		      <form ng-submit="submitNewItem();">
 		        <input type="text" placeholder="Add new item to list" class="todo-list-head__text-input" ng-model="newItem">
 		        <div class="toto-list-head__submit" ng-click="submitNewItem();"><i class="fa fa-check" aria-hidden="true"></i></div>
 		      <form>
-		    </div>
+		    </div> -->
 		    <ul class="todo-list__items">
 		      <li class="animated slideInUp" ng-repeat="item in items" ng-class="{'completed': item.status == 'completed'}"><span>{{$index + 1}}</span>{{item.title}}<i class="fa fa-trash-o todo-list-item__trash" aria-hidden="true" ng-click="deleteItem($index);"></i><i class="fa todo-list-item__complete" ng-class="{'fa-times': item.status == 'completed', 'fa-check-square-o': item.status != 'completed'}" aria-hidden="true" ng-click="completeItem($index);"></i></li>
 		    </ul>
@@ -32,24 +32,23 @@
 			  $scope.items = [
 			    {title: 'Să dăm de mâncare porumbeilor din Piața Sfatului Brașov', status: ''}, 
 			    {title: 'Să fim fericiți în fiecare zi', status: 'completed'},
-			    {title: 'Să mergem la Span (Jacuzzi/Saună/Masaj)', status: ''}
-			    {title: 'Să pictăm ceva. Orice. Oricând. Pe orice. Cu orice', status: ''}
-			    {title: 'Să invităm prietenii într-un bar, să le spunem că facem cinste, dar noi să nu mergem', status: ''}
-			    {title: 'Să compunem o poezie împreună', status: ''}
-			    {title: 'Să vizităm închisoarea de la Sighetul Marmației', status: ''}
-			    {title: 'Să ne jucăm împreună. Toată noaptea !', status: ''}
-			    {title: 'Să ne facem masaj și să ascultăm muzică chill, să aprindem lumânări', status: ''}
-			    {title: 'Să parcurgem toata pista de biciclete', status: ''}
-			    {title: 'Să ne descriem ce simțim unul pentru celălalt', status: ''}
-			    {title: 'Să ne plimbăm prin ploaie vara. Să ne sărutam și să uităm de noi', status: ''}
-			    {title: 'Să mergem pe stadion la un meci', status: ''}
-			    {title: 'Să mergem la un concert', status: 'completed'}
-			    {title: 'Să avem fiecare o sumă fixă de bani, fiecare să meargă într-o direcție și de banii respectivi să ne luăm un cadou', status: ''}
-			    {title: 'Să petrecem o zi în casă doar noi doi. Fără internet, fără calculator, fără televizior. Te ține?', status: ''}
-			    {title: '.', status: ''}
-			    {title: '.', status: ''}
-			    {title: '.', status: ''}
-			    {title: '.', status: ''}
+			    {title: 'Să mergem la Span (Jacuzzi/Saună/Masaj)', status: ''},
+			    {title: 'Să pictăm ceva. Orice. Oricând. Pe orice. Cu orice', status: ''},
+			    {title: 'Să invităm prietenii într-un bar, să le spunem că facem cinste, dar noi să nu mergem', status: ''},
+			    {title: 'Să compunem o poezie împreună', status: ''},
+			    {title: 'Să vizităm închisoarea de la Sighetul Marmației', status: ''},
+			    {title: 'Să ne jucăm împreună. Toată noaptea !', status: ''},
+			    {title: 'Să ne facem masaj și să ascultăm muzică chill, să aprindem lumânări', status: ''},
+			    {title: 'Să parcurgem toata pista de biciclete', status: ''},
+			    {title: 'Să ne descriem ce simțim unul pentru celălalt', status: ''},
+			    {title: 'Să ne plimbăm prin ploaie vara. Să ne sărutam și să uităm de noi', status: ''},
+			    {title: 'Să mergem pe stadion la un meci', status: ''},
+			    {title: 'Să mergem la un concert', status: 'completed'},
+			    {title: 'Să avem fiecare o sumă fixă de bani, fiecare să meargă într-o direcție și de banii respectivi să ne luăm un cadou', status: ''},
+			    {title: 'Să petrecem o zi în casă doar noi doi. Fără internet, fără calculator, fără televizior. Te ține?', status: ''},
+			    {title: 'Să ne gătim mereu ceva bun', status: 'completed'},
+			    {title: 'Să facem sport împreună (3 zile pe săptămână, 20 min în fiecare dimineață acasă)', status: ''},
+			    {title: 'Să filmăm o zi din viața noastră', status: ''}
 			  ];
 			  
 			  $scope.submitNewItem = function() {
