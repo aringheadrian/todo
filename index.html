@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div class="container" ng-app="angularTodo">
-		  <h1>Angular.js Todo List</h1>
+		  <h1>19 planuri pentru anul 2016</h1>
 		  <div class="todo-list" ng-controller="angularTodoC">
 		    <div class="todo-list__head">
 		      <form ng-submit="submitNewItem();">
@@ -31,8 +31,25 @@
 			angularTodo.controller('angularTodoC', ['$scope', function($scope){
 			  $scope.items = [
 			    {title: 'Să dăm de mâncare porumbeilor din Piața Sfatului Brașov', status: ''}, 
-			    {title: 'Wash The Car', status: 'completed'},
-			    {title: 'Buy a New Car', status: ''}
+			    {title: 'Să fim fericiți în fiecare zi', status: 'completed'},
+			    {title: 'Să mergem la Span (Jacuzzi/Saună/Masaj)', status: ''}
+			    {title: 'Să pictăm ceva. Orice. Oricând. Pe orice. Cu orice', status: ''}
+			    {title: 'Să invităm prietenii într-un bar, să le spunem că facem cinste, dar noi să nu mergem', status: ''}
+			    {title: 'Să compunem o poezie împreună', status: ''}
+			    {title: 'Să vizităm închisoarea de la Sighetul Marmației', status: ''}
+			    {title: 'Să ne jucăm împreună. Toată noaptea !', status: ''}
+			    {title: 'Să ne facem masaj și să ascultăm muzică chill, să aprindem lumânări', status: ''}
+			    {title: 'Să parcurgem toata pista de biciclete', status: ''}
+			    {title: 'Să ne descriem ce simțim unul pentru celălalt', status: ''}
+			    {title: 'Să ne plimbăm prin ploaie vara. Să ne sărutam și să uităm de noi', status: ''}
+			    {title: 'Să mergem pe stadion la un meci', status: ''}
+			    {title: 'Să mergem la un concert', status: 'completed'}
+			    {title: 'Să avem fiecare o sumă fixă de bani, fiecare să meargă într-o direcție și de banii respectivi să ne luăm un cadou', status: ''}
+			    {title: 'Să petrecem o zi în casă doar noi doi. Fără internet, fără calculator, fără televizior. Te ține?', status: ''}
+			    {title: '.', status: ''}
+			    {title: '.', status: ''}
+			    {title: '.', status: ''}
+			    {title: '.', status: ''}
 			  ];
 			  
 			  $scope.submitNewItem = function() {
